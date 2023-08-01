@@ -1,7 +1,7 @@
 <?php
-// Get the client's IP address
-$clientIP = $_SERVER['REMOTE_ADDR'];
+// Get the current file name
+$fileName = basename($_SERVER['PHP_SELF']);
 
-// Output the client's IP address
-echo "Client's IP Address: " . $clientIP;
+// Output the current file name
+echo "Current File Name: " . $fileName;
 ?>

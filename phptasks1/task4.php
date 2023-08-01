@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Display Name</title>
-</head>
-<body>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // Get the user's name from the form submission
-        $name = isset($_POST['name']) ? $_POST['name'] : '';
+<?php
+// Get the client's IP address
+$clientIP = $_SERVER['REMOTE_ADDR'];
 
-        // Display the name using PHP echo
-        echo "<h1>Hello, $name!</h1>";
-    }
-    ?>
-</body>
-</html>
+// Output the client's IP address
+echo "Client's IP Address: " . $clientIP;
+?>
